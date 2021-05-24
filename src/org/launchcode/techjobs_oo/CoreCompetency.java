@@ -11,6 +11,10 @@ public class CoreCompetency {
         this.id = nextId;
         nextId++;
     }
+    public CoreCompetency(String value) {
+        this();
+        this.value = value;
+    }
 
     public String getValue() {
         return value;
@@ -24,10 +28,6 @@ public class CoreCompetency {
         this.value = value;
     }
 
-    public CoreCompetency(String value) {
-        this();
-        this.value = value;
-    }
 
     // Custom toString, equals, and hashCode methods:
 
