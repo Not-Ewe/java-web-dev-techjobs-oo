@@ -99,7 +99,8 @@ public class JobTest {
         Job first_job = new Job("Product Tester", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality Control"), new CoreCompetency("Persistence"));
 
-        assertEquals(first_job.getName().toString(), first_job.getName()  );
+        assertTrue(first_job.toString().startsWith("\n"));
+        assertTrue(first_job.toString().endsWith("\n"));
     }
 
     @Test

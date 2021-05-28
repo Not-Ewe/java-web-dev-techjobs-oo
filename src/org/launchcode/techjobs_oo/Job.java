@@ -21,6 +21,7 @@ public class Job {
     // *** Constructor to initialize all fields ***
     public Job(String name, Employer employer, Location location, PositionType positionType,
                CoreCompetency coreCompetency) {
+        this();
         this.name = name;
         this.employer = employer;
         this.location = location;
